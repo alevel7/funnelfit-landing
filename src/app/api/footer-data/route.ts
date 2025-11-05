@@ -34,7 +34,7 @@ const footerData = {
             { name: "About", url: "/#about" },
             { name: "Services", url: "/#services" },
             { name: "Solutions", url: "/#solutions" },
-            { name: "Results", url: "/#results" }
+            
         ]
     },
     otherPages: {
@@ -48,9 +48,9 @@ const footerData = {
     },
     contactDetails: {
         name:"Contact Details",
-        address: "Victoria Island, Lagos, Nigeria",
-        email: "hello@funnelfit.ng",
-        phone: "+234 (0) 901 234 5678"
+        address: "Primewaterview Gardens 2, Ikate Elegushi, Lekki, Lagos - Nigeria",
+        email: "info@funnelfit.co.uk",
+        phone: "+234 704 8000 942"
     },
     copyright: "©2025 FunnelFit. All Rights Reserved"
 };

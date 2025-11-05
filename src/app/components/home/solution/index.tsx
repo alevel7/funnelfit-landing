@@ -18,13 +18,15 @@ function Solutions() {
       name: 'Essential Finance',
       price: '₦50,000',
       period: '/month',
-      description: 'Perfect for startups and small businesses getting started with professional bookkeeping.',
+      description: 'Early-stage or small business needing organized books and compliance peace of mind',
       features: [
-        'Monthly financial statements',
-        'Basic bookkeeping & reconciliation',
-        'Tax preparation support',
-        'Email support',
-        'Cloud-based accounting setup'
+        'Bookkeeping + Foundational Finance',
+        'Record and classify transactions (sales, expenses, payroll)',
+        'Maintain ledgers, the chart of accounts, and reconciliations',
+        'Manage payables, receivables, and payroll cycles',
+        'Monthly close and reporting (P&L, Balance Sheet, Cash Flow)',
+        'Tax and statutory compliance calendar',
+        'Basic audit prep and document support'
       ],
       popular: false,
       ctaText: 'Get Started'
@@ -33,14 +35,16 @@ function Solutions() {
       name: 'Growth Finance',
       price: '₦120,000',
       period: '/month',
-      description: 'Ideal for growing businesses that need comprehensive financial management and insights.',
+      description: 'Growing SME or funded startup needing forecasting, discipline, and financial management',
       features: [
-        'Everything in Essential Finance',
-        'Weekly financial reports',
-        'Cash flow management',
-        'Budget planning & forecasting',
-        'Dedicated account manager',
-        'Phone & email support'
+        'Structured / Controller Services',
+        'Build financial visibility, process discipline, and short-term forecasting',
+        'Management reporting and variance analysis',
+        'Cashflow forecasting and working capital management',
+        'Budgeting and KPI dashboards',
+        'Internal controls and finance process improvement',
+        'Oversight of accounting and finance teams',
+        'Audit coordination and external stakeholder liaison'
       ],
       popular: true,
       ctaText: 'Most Popular'
@@ -49,14 +53,15 @@ function Solutions() {
       name: 'Strategic Finance',
       price: '₦250,000',
       period: '/month',
-      description: 'Complete CFO services for established businesses ready to scale strategically.',
+      description: 'For established businesses requiring comprehensive support (or project based at ₦100/hr)',
       features: [
-        'Everything in Growth Finance',
-        'Fractional CFO services',
-        'Strategic financial planning',
-        'Investment & funding guidance',
-        'Board-ready financial reports',
-        'Priority support & consultation'
+        'CFO / Strategic Advisory',
+        'Drive growth, capital strategy, and long-term value creation.',
+        'Capital structure and fundraising strategy',
+        'Strategic planning and scenario analysis',
+        'Tax strategy, treasury, and risk management',
+        'ERP / BI system oversight and finance tech stack alignment',
+        'Executive-level support to CEO and Board (M&A, expansion, exits)'
       ],
       popular: false,
       ctaText: 'Scale Now'
@@ -64,7 +69,7 @@ function Solutions() {
   ]
 
   return (
-    <section>
+    <section id='solutions'>
       <div className='2xl:py-20 py-11'>
         <div className='container'>
           <motion.div
@@ -96,7 +101,7 @@ function Solutions() {
                   }`}>
                   {tier.popular && (
                     <div className='absolute -top-3 left-1/2 transform -translate-x-1/2'>
-                      <span className='bg-[#FBB437] text-black px-4 py-1 rounded-full text-sm font-medium'>
+                      <span className='bg-blue text-white px-4 py-1 rounded-full text-sm font-medium'>
                         Most Popular
                       </span>
                     </div>
@@ -144,8 +149,8 @@ function Solutions() {
                       href='/contact'
                       className={`w-full py-3 px-6 rounded-lg font-medium text-center transition-all duration-300 ${
                         tier.popular
-                          ? 'bg-[#FBB437] text-black hover:bg-[#FBB437]/90'
-                          : 'bg-dark_black text-white hover:bg-dark_black/90 dark:bg-white dark:text-black dark:hover:bg-white/90'
+                          ? 'bg-blue text-white hover:bg-blue/90'
+                          : 'bg-purple_blue text-white hover:bg-purple_blue/90'
                       }`}>
                       {tier.ctaText}
                     </Link>
@@ -161,7 +166,7 @@ function Solutions() {
               </p>
               <Link
                 href='/contact'
-                className='inline-flex items-center gap-2 bg-black text-[#FBB437] hover:bg-black/90 hover:text-[#FBB437]/90 font-medium px-6 py-3 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl'>
+                className='inline-flex items-center gap-2 bg-purple_blue text-white hover:bg-purple_blue/90 font-medium px-6 py-3 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl'>
                 Schedule a consultation
                 <svg
                   className='w-4 h-4'

@@ -22,23 +22,24 @@ export default function Home() {
       <WebResult />
       {/* ---------------------Web result section Ends-----------------  */}
 
-      {/* ---------------------Innovation section Starts-----------------  */}
-      <Innovation />
-      {/* ---------------------Innovation section Ends-----------------  */}
+  {/* ---------------------Innovation section Starts-----------------  */}
+  <Innovation />
+  {/* ---------------------Innovation section Ends-----------------  */}
+
+  {/* ---------------------Solutions section Starts-----------------  */}
+  <Solutions />
+  {/* ---------------------Solutions section Ends-----------------  */}
 
 
 
-      {/* ---------------------Customer Stories section Starts-----------------  */}
-      <CustomerStories />
-      {/* ---------------------Customer Stories section Ends-----------------  */}
+  {/* ---------------------Customer Stories section Starts-----------------  */}
+  <CustomerStories />
+  {/* ---------------------Customer Stories section Ends-----------------  */}
 
       {/* ---------------------Faq section Starts-----------------  */}
       <Faq />
       {/* ---------------------Faq section Ends-----------------  */}
 
-      {/* ---------------------Solutions section Starts-----------------  */}
-      <Solutions />
-      {/* ---------------------Solutions section Ends-----------------  */}
     </main>
   );
 }
