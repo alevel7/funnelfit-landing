@@ -96,7 +96,7 @@ function Solutions() {
                   key={index}
                   className={`relative p-8 rounded-2xl border transition-all duration-300 hover:shadow-lg ${
                     tier.popular
-                      ? 'border-[#FBB437] bg-gradient-to-b from-[#FBB437]/5 to-transparent'
+                      ? 'border-[#aac6ff] bg-gradient-to-b from-[#eaf2ff] to-transparent'
                       : 'border-dark_black/10 dark:border-white/10'
                   }`}>
                   {tier.popular && (

@@ -7,8 +7,7 @@ function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    interest: 'design & branding',
-    budget: '',
+    company: '',
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
@@ -24,8 +23,7 @@ function ContactForm() {
   const reset = () => {
     formData.name = ''
     formData.email = ''
-    formData.interest = 'design & branding'
-    formData.budget = ''
+    formData.company = ''
     formData.message = ''
   }
 
@@ -39,8 +37,7 @@ function ContactForm() {
       body: JSON.stringify({
         name: formData.name,
         email: formData.email,
-        interest: formData.interest,
-        budget: formData.budget,
+        company: formData.company,
         message: formData.message,
       }),
     })
@@ -148,37 +145,18 @@ function ContactForm() {
                     />
                   </div>
                 </div>
-                <div className='flex flex-col md:flex md:flex-row gap-6'>
-                  <div className='w-full'>
-                    <label htmlFor='interest'>
-                      What are you interested in?
-                    </label>
-                    <select
-                      className='w-full mt-2 text-base px-4 rounded-full py-2.5 border transition-all duration-500 dark:border-white/20 focus:outline-0 dark:bg-black/40'
-                      name='interest'
-                      id='interest'
-                      value={formData.interest}
-                      onChange={handleChange}>
-                      <option value='design & branding'>
-                        Design & Branding
-                      </option>
-                      <option value='Ecommerce'>Ecommerce</option>
-                      <option value='Specialist'>Specialist</option>
-                    </select>
-                  </div>
-                  <div className='w-full'>
-                    <label htmlFor='budget'>Project budget</label>
-                    <select
-                      className='w-full mt-2 text-base px-4 rounded-full py-2.5 border transition-all duration-500 dark:text-white border-solid dark:border-white/20 focus:outline-0 dark:bg-black/40'
-                      name='budget'
-                      id='budget'
-                      value={formData.budget}
-                      onChange={handleChange}>
-                      <option value=''>Select your budget</option>
-                      <option value='$10000'>$10,000</option>
-                      <option value='$50500'>$50,500</option>
-                    </select>
-                  </div>
+                <div className='w-full'>
+                  <label htmlFor='company'>Company (optional)</label>
+                  <input
+                    className='w-full mt-2 rounded-full border px-5 py-3 outline-hidden transition dark:border-white/20
+                                        focus:border-dark_black/50 dark:focus:border-white/50 dark:bg-black/40'
+                    id='company'
+                    type='text'
+                    name='company'
+                    value={formData.company}
+                    onChange={handleChange}
+                    placeholder='Enter your company (optional)'
+                  />
                 </div>
                 <div className='w-full'>
                   <label htmlFor='message'>Message</label>
@@ -197,7 +175,7 @@ function ContactForm() {
                   {!loader ? (
                     <button
                       type='submit'
-                      className='group w-fit text-white dark:text-dark_black font-medium bg-dark_black dark:bg-white rounded-full flex items-center gap-4 py-2 pl-5 pr-2 transition-all duration-200 ease-in-out  hover:bg-transparent border hover:text-dark_black border-dark_black'>
+                      className='group w-fit text-white font-medium bg-purple_blue rounded-full flex items-center gap-4 py-2 pl-5 pr-2 transition-all duration-200 ease-in-out hover:bg-purple_blue/90 border border-purple_blue'>
                       <span className='transform transition-transform duration-200 ease-in-out group-hover:translate-x-10'>
                         Let’s Collaborate
                       </span>
