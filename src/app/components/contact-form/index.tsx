@@ -31,7 +31,7 @@ function ContactForm() {
     e.preventDefault()
     setLoader(true)
 
-    fetch('https://formsubmit.co/ajax/deji@funnelfit.co.uk', {
+    fetch('https://formsubmit.co/ajax/info@funnelfit.co.uk', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify({
